@@ -32,13 +32,13 @@ if FOAM_VERSION( " == ", "010600" ) :
 
 
 #--------------------------------------------------------------------------------------
-if FOAM_VERSION( ">=", "010700" ):
+if FOAM_VERSION( "==", "010700" ) or FOAM_VERSION( "==", "010701" ):
     from laplacianFlux.r1_7_0 import * 
     pass
 
 
 #--------------------------------------------------------------------------------------
-if FOAM_VERSION( ">=", "020000" ):
+if FOAM_VERSION( "==", "020000" ) or FOAM_VERSION( "==", "020001" ):
     from laplacianFlux.r2_0_0 import * 
     pass
 
